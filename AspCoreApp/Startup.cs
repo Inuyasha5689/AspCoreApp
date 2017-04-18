@@ -28,6 +28,8 @@ namespace AspCoreApp
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddApplicationInsightsTelemetry(Configuration);
+
             services.AddMvc();
         }
 
@@ -53,7 +55,7 @@ namespace AspCoreApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Main}/{action=Index}/{id?}");
             });
         }
     }
