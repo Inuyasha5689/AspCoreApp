@@ -11,7 +11,7 @@ namespace AspCoreApp.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
 
-            return View();
+           return View();
         }
     }
 }
