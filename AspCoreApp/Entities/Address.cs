@@ -7,5 +7,12 @@ namespace AspCoreApp.Entities
 {
     public class Address
     {
+        public int AddressId { get; set; }
+        public string StreetName { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string ZipCode { get; set; }
+        public int PersonId { get; set; }
+        public Person MyPerson { get; set; }
     }
 }
